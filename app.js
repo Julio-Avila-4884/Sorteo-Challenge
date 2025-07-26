@@ -64,11 +64,12 @@ function sortearAmigo() {
     */
      // se agrega para evitar un bucle infinito de iteraciones cuando se terminan los numeros
         if (listaNumerosUsados.length == multiplicador1) {
-         asignarTextoElemento("ul", "Sorteo de amigos secretos finalizado " );
-
+            asignarTextoElemento("ul", "Sorteo de amigos secretos finalizado " );
+            document.getElementById("sortear").disabled = true; // deshabilita el boton sortear no se ve visualmente pero detiene el evento onclick
+            /* borrar
          console.log("SORTEO TERMINADO, NO ES POSIBLE TENER MAS GANADORES")
          console.log(listaNumerosUsados);
-        // SE DEBE DESHABILITAR EL BOTON "SORTEO"
+         */        
             }
     //si el numero ya fue usado, se sortea de nuevo
             else if (listaNumerosUsados.includes(numeroSorteado)){ 
