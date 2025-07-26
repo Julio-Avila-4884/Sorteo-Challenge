@@ -20,5 +20,6 @@ el numero obtenido tiene dato en la lista?
 
 si - imprimir "objeto"
 no - repetir seleccion de numero
+prueba
 
 prueba push desde vsc
