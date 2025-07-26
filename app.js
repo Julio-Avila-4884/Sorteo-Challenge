@@ -30,11 +30,9 @@ function agregarAmigo() {
 }
 // seleccion sortear 
 function sortearAmigo() {
-    console.log("multiplicador inicial: " + multiplicador1);
-// en caso de exceder los valores de la lista el inicial 10 se incrementara en 10 veces 
+    // en caso de exceder los valores de la lista el inicial 10 se incrementara en 10 veces 
     while (multiplicador1 < listaNombres.length){ 
         multiplicador();
-        //console.log("nuevo valor " + multiplicador1);
         break;
     }
     // generar numero aleatorio
@@ -44,10 +42,6 @@ function sortearAmigo() {
         if (listaNumerosUsados.length == multiplicador1) {
             asignarTextoElemento("ul", "Sorteo de amigos secretos finalizado " );
             document.getElementById("sortear").disabled = true; // deshabilita el boton sortear no se ve visualmente pero detiene el evento onclick
-            /* borrar
-         console.log("SORTEO TERMINADO, NO ES POSIBLE TENER MAS GANADORES")
-         console.log(listaNumerosUsados);
-         */        
             }
     //si el numero ya fue usado, se sortea de nuevo
             else if (listaNumerosUsados.includes(numeroSorteado)){ 
@@ -59,15 +53,8 @@ function sortearAmigo() {
                     // si se detecta que es menor o igual al los datos introducidos,
                     // se imprime el ganador
                     if (numeroSorteado < listaNombres.length){ 
-                        asignarTextoElemento("ul", "amigo secreto: " + `${listaNombres[numeroSorteado]}`);
-                    
-                        console.log("hay ganador" );
-                        console.log("numero ganador: " +listaNombres[numeroSorteado]);
-                    } else {
-                        // si el numero es mayor se almacena
-                        console.log("valor fuera del rango");
-                        console.log(listaNumerosUsados);
-                        // se regrsa a la seccion sortear
+                        asignarTextoElemento("ul", "amigo secreto: " + `${listaNombres[numeroSorteado]}`);                  
+                        } else {
                         sortearAmigo();     
                     }
                 }                    
