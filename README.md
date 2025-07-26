@@ -1,12 +1,22 @@
 # Sorteo-Challenge
 
-se desarrollo un programa el cual te permite ingresar el nombre de los participantes para una dinamica de " Amigo Secreto"
+Se desarrolló un programa que permite ingresar el nombre de los participantes para una dinámica de "Amigo Secreto".
 
-1. se introducen el nombre de los participantes, uno por uno, y se presiona el boton "Añadir" para generar la base de datos de los participantes
+1. Introducen el nombre de los participantes, uno por uno.
+![alt text](image.png)
+2. Presionan el botón "Añadir" para generar la base de datos de los participantes.
+![alt text](image-1.png)
+Ya terminado el registro de participantes, ¡empieza lo divertido!
+Es momento de iniciar el sorteo.
+3.Oprime el botón "Sortear amigo" para generar el primer "amigo secreto".
+![alt text](image-3.png)
+4. No olvides guardar el nombre de tu "amigo secreto", ya que no podrás recuperarlo, y se tendrá que realizar todo desde el inicio.
+![alt text](image-4.png)
+5. Cuando todos los nombres hayan salido, aparecerá el mensaje:
+"Sorteo de amigos secretos finalizado"
+![alt text](image-5.png)
 
-2. al concluir con el registro de las personas, se procede a "sortear" el amigo secteto que tocara
+Solo queda ¡disfrutar de la dinámica!
 
-3. el programa dara un aviso cuando ya no existan mas participantes en el sorteo: ""Sorteo de amigos secretos finalizado "
-
-
+JRA
 
